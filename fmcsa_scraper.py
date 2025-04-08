@@ -13,3 +13,8 @@ with open("fmcsa_scraper_log.json", "w") as f:
     json.dump(log_data, f, indent=2)
 
 print("Scraper ran and created fmcsa_scraper_log.json")
+print("Scraper ran and created fmcsa_scraper_log.json")
+
+import os
+os.system("cd /root/fmcsa-bot && git add fmcsa_scraper_log.json && git commit -m 'Auto: update log' && git push")
+
